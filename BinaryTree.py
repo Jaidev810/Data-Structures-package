@@ -8,7 +8,7 @@ class Node:
 
 
 class BinaryTree:
-    def takeinput(self):
+    def takeinput(self) -> Node:
         print("enter root's data: ")
         rootData = int(input())
         if rootData == -1:
@@ -34,7 +34,7 @@ class BinaryTree:
                 q.put(cur.right)
         return root
 
-    def printLevelWise(self, root):
+    def printLevelWise(self, root: Node) -> None:
         if root is None:
             return None
         q = queue.Queue()
@@ -52,7 +52,7 @@ class BinaryTree:
 
 
     ## Traversal ##
-    def levelorder(self, root):
+    def levelorder(self, root: Node) -> List :
         arr = []
         q = []
         if root is None:
@@ -80,14 +80,14 @@ class BinaryTree:
         return arr
 
 
-    def preorder(self, root):
+    def preorder(self, root: Node):
         if root is not None:
             print(root.val, end=' ')
             self.preorder(root.left)
             self.preorder(root.right)
         return
     
-    def inorder(self, root):
+    def inorder(self, root: Node):
         if root is not None:
             self.inorder(root.left)
             print(root.val, end=' ')
