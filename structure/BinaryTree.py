@@ -52,7 +52,7 @@ class BinaryTree:
 
 
     ## Traversal ##
-    def levelorder(self, root: Node) -> List :
+    def levelorder(self, root: Node):
         arr = []
         q = []
         if root is None:
