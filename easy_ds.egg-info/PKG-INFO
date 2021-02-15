@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: easy-ds
+Version: 0.0.1
+Summary: Implementation of data structures
+Home-page: UNKNOWN
+Author: Jaidev chaudhary
+Author-email: jaidevchaudhary810@gmail.com
+License: MIT
+Description: Implementations of Data Structures
+        - Singly Linked List
+        - Doubly Linked List
+        - Binary Tree
+        Different operations can be performed
+        
+        Change Log
+        
+        =============
+        
+        0.0.1(15/02/2021)
+        
+        ------------------
+        - First Release
+Keywords: Data structure
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
