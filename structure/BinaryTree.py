@@ -52,7 +52,7 @@ class BinaryTree:
 
 
     ## Traversal ##
-    def levelorder(self, root: Node):
+    def levelorder(self, root: Node) -> list:
         arr = []
         q = []
         if root is None:
@@ -80,16 +80,23 @@ class BinaryTree:
         return arr
 
 
-    def preorder(self, root: Node):
+    def preorder(self, root: Node) -> None:
         if root is not None:
             print(root.val, end=' ')
             self.preorder(root.left)
             self.preorder(root.right)
         return
     
-    def inorder(self, root: Node):
+    def inorder(self, root: Node) -> None:
         if root is not None:
             self.inorder(root.left)
             print(root.val, end=' ')
             self.inorder(root.right)
         return
+
+    def postorder(self, root:Node) -> None:
+        if root is not None:
+            self.postorder(root.left)
+            self.postorder(root.right)
+            print(root.val, end=' ')
+        return 
